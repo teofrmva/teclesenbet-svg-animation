@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teodros | SVG Animation Showcase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Header: introduces the animation showcase. -->
+  <header>
+    <h1>SVG Animation Showcase</h1>
+    <p>Four SVG animations created by Teodros.</p>
+  </header>
+
+  <main>
+
+    <!-- Example 1: Star changes color and size on hover. -->
+    <section>
+      <h2>1. Hover Transition</h2>
+
+      <svg class="hover-icon" viewBox="0 0 100 100"
+           role="img" aria-labelledby="hover-title">
+        <title id="hover-title">Star that changes on hover</title>
+        <polygon points="50,10 61,40 93,40 67,60 77,93 50,73 23,93 33,60 7,40 39,40"/>
+      </svg>
+
+      <p>This star uses a CSS transition to smoothly change color and size when hovered over.</p>
+    </section>
+
+    <!-- Example 2: Circle continuously spins as a loader. -->
+    <section>
+      <h2>2. Spinning Loader</h2>
+
+      <svg class="spinner" viewBox="0 0 50 50"
+           role="img" aria-labelledby="spin-title">
+        <title id="spin-title">Spinning loading circle</title>
+        <circle cx="25" cy="25" r="20"/>
+      </svg>
+
+      <p>This loading circle uses CSS keyframes to rotate continuously.</p>
+    </section>
+
+    <!-- Example 3: Line draws itself when the page loads. -->
+    <section>
+      <h2>3. Self-Drawing Line</h2>
+
+      <svg class="drawing" viewBox="0 0 300 100"
+           role="img" aria-labelledby="draw-title">
+        <title id="draw-title">Line drawing itself from left to right</title>
+        <line class="draw-line"
+              x1="20" y1="50" x2="280" y2="50"/>
+      </svg>
+
+      <p>This line uses stroke-dasharray and stroke-dashoffset to appear as if it is drawing itself.</p>
+    </section>
+
+    <!-- Example 4: Circle fades in and moves upward. -->
+    <section>
+      <h2>4. Fade-Up Entrance</h2>
+
+      <svg class="fade-in" viewBox="0 0 100 100"
+           role="img" aria-labelledby="fade-title">
+        <title id="fade-title">Circle fading in and moving upward</title>
+        <circle cx="50" cy="50" r="35"/>
+      </svg>
+
+      <p>This circle uses opacity and translateY to fade in while moving upward.</p>
+    </section>
+
+    <!-- Reflection: explains what I learned from the project. -->
+    <section class="reflection">
+      <h2>Reflection</h2>
+
+      <p>
+        The hardest animation for me was the self-drawing line because
+        I had to understand how stroke-dasharray and stroke-dashoffset
+        work together. I learned that stroke-dasharray controls the
+        visible and hidden parts of a line, while stroke-dashoffset
+        changes where the dash starts. By animating the offset, I
+        could make the line look like it was drawing itself.
+        I have seen hover transitions on shopping websites when
+        buttons or product images change as the mouse moves over
+        them. I have seen spinning loaders on YouTube when videos
+        are buffering. Self-drawing lines appear in animated logos
+        and website introductions. Fade-up animations are common
+        on modern websites when text and images appear as a page
+        loads. This assignment helped me understand how CSS can
+        make SVG graphics more interactive without JavaScript.
+        I also learned why reduced-motion settings are important
+        for accessibility.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer: identifies the creator and year. -->
+  <footer>
+    <p>&copy; 2026 Teodros. SVG Animation Showcase.</p>
+  </footer>
+
+</body>
+</html>
